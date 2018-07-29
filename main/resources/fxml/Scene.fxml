@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<AnchorPane id="AnchorPane"  stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mvnfx.FXMLController">
+<ImageView id="preview" fx:id="preview" fitHeight="500.0" fitWidth="357.0" layoutX="100.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+<GridPane id="GridPaneMain" prefHeight="323.0" prefWidth="497.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" percentWidth="80.0"></ColumnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" percentWidth="20.0"></ColumnConstraints>
+    </columnConstraints>    
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES" percentHeight="20.0"></RowConstraints>
+        <RowConstraints vgrow="SOMETIMES" percentHeight="60.0"></RowConstraints>
+        <RowConstraints vgrow="SOMETIMES" percentHeight="20.0"></RowConstraints>
+    </rowConstraints>
+    <children>
+      
+        
+        <Label fx:id="label" layoutX="44.0" layoutY="30.0" minHeight="16" minWidth="69" />
+      
+      <HBox id="cont"  fx:id="dupa" GridPane.columnIndex="0" GridPane.rowIndex="2" prefWidth="207.0" >
+         <children>
+            <Label fx:id="karta1" VBox.vgrow="SOMETIMES" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity"   />
+            <Label fx:id="karta2" VBox.vgrow="SOMETIMES" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" />
+            <Label fx:id="karta3" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity"   />
+            <Label fx:id="karta4" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" />
+            <Label VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity"   />
+            <Label VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity"   />
+            <Label VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity"  />
+            <Label VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" />               
+            <Label VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity"  />
+            <Label VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity"   />     
+         </children></HBox>
+      
+    </children>
+    
+</GridPane>
+</AnchorPane>
