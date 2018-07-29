@@ -24,6 +24,7 @@ public class MainApp extends Application {
         
         System.out.println(new File("").getAbsolutePath());
         stage.show();
+        //only for test
     }
 
     /**
